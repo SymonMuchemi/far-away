@@ -1,25 +1,37 @@
-import logo from './logo.svg';
 import './App.css';
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <h1>React App</h1>
+      <p>Hello world</p>
+    </>
   );
 }
 
-export default App;
+const Logo = () => (
+	<h1>🌴 FAR AWAY 👜</h1>
+);
+
+
+const Form = () => {
+	return (
+		<div className='add-form'>
+			<h3>What do you need for your 😍 trip</h3>
+		</div>
+	);
+};
+
+const PackingList = () => (
+	<div className='list'>LIST</div>
+);
+
+const Stats = () => (
+	<footer>
+		<em>
+			👜 You have X items on your list and you have already packed X (X%)
+		</em>
+	</footer>
+
+);
+
